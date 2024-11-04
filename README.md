@@ -7,7 +7,7 @@ from PIL import Image
  
 # Membaca gambar input 
 image_path = "/content/sample_data/6d914ce12d195cf18ab0c484405f2a51.jpg"  # Ganti dengan path gambar Anda 
-input_image = drive.mount(image_path).convert("L")  # Konversi ke skala abu-abu 
+input_image = Image.open(image_path).convert("L")  # Konversi ke skala abu-abu 
 X = np.array(input_image) 
  
 # Mengatur ukuran filter 
